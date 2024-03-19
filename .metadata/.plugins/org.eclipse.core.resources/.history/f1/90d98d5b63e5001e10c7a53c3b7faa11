@@ -1,0 +1,11 @@
+package com.Servlet;
+
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+
+public class MyServlet extends HttpServlet{
+	public void doGet(HttpServletRequest request, HttpServletResponse response) {
+		System.out.println("This is Get Method..");
+		
+	}
+}

@@ -1,0 +1,14 @@
+package com.servlet;
+
+import java.io.IOException;
+
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+
+
+public class MainForm extends HttpServlet{
+	
+	public void doPost(HttpServletRequest request, HttpServletResponse response)throws IOException, ServletException{
+		
+	}
+}

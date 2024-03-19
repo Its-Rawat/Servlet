@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Servlet Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        
+
+.container{
+    width: fit-content;
+    background-color: rgb(255, 255, 0);
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    border: 5px solid black;
+}
+h1{
+    margin: 0%;
+}
+
+input{
+    padding: 8px;
+    margin: 8px;
+}
+button{
+    font-size: large;
+    margin: 10px;
+    
+}
+
+.btn1,.btn2{
+margin: auto;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: 600;
+    border: 1px solid gainsboro;
+}
+
+.btn1:hover{
+    background-color:chartreuse;
+    border: none;
+}
+.btn2:hover{
+    background-color:coral;
+    border: none;
+}
+
+
+input{
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+}
+
+input:active{
+    border: none;
+}
+
+
+.options{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+
+}
+
+
+input[type="radio"] {
+    transform: scale(1.5); /* Increase size by 1.5 times */
+}
+input[type="radio"]:checked {
+    transform: scale(1.0); /* Increase size by 1.5 times */
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h1>Form</h1>
+        </center>
+        <form action="MainForm" method="post" placeholder="Enter Here">
+            <tb>
+                <tr>
+                    <td>Enter Your Name: </td>
+                    <td><input type="text" name="user_name" placeholder="Enter Your Name Here" /></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Enter Your Password: </td>
+                    <td><input type="password" name="user_password" placeholder="Enter Your Password Here: " /></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Enter Your Email: </td>
+                    <td><input type="email" name="user_email" placeholder="Enter Your Email Here: " /></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Select Gender: </td>
+                    <td><input type="radio" name="user_gender" value="Male" class="radio" />Male &nbsp; <input
+                            type="radio" name="user_gender" value="Female" class="radio" />Female</td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Select Your Course: </td>
+                    <td>
+                        <select name="user_course" class="options">
+                            <option value="JAVA">Java</option>
+                            <option value="PHP">PHP</option>
+                            <option value="PYTHON">PYTHON</option>
+                            <option value="CPP">C++</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" value="checked" name="condition" />
+                    </td>
+                    <td>
+                        Agree Terms and condition's.
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <button type="submit" class="btn1">Submit</button>
+                        <button type="reset" class="btn2">Reset</button>
+                    </td>
+                </tr>
+
+
+            </tb>
+        </form>
+    </div>
+
+    
+</body>
+
+</html>

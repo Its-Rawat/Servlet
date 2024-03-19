@@ -1,0 +1,10 @@
+package com.Servlet;
+
+import javax.servlet.*;
+import com.practice;
+import javax.servlet.http.*;
+
+
+public class MyServlet {
+
+}
